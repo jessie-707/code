@@ -1,3 +1,4 @@
+// reference from the SmartJS Client Library
 import React from 'react';
 import { Button, Spinner } from 'react-bootstrap';
 import '../pages/style.css';

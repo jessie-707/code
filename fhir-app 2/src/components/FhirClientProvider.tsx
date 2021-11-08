@@ -1,3 +1,4 @@
+// reference from the SmartJS Client Library
 import React from 'react';
 import { oauth2 as SMART } from 'fhirclient';
 import { FhirClientContext } from '../utils/FhirClientContext';

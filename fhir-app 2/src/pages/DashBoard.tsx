@@ -4,6 +4,7 @@ import { FhirClientContext } from '../utils/FhirClientContext';
 import { LoadingSpinner } from '../components/LoadingSpinner';
 
 import doctorImg from '../images/doctorX.png';
+import logoImg from "../images/logo1.png";
 import { Nav } from 'react-bootstrap';
 import Questionnaire from './Questionnaire';
 
@@ -99,14 +100,16 @@ export default function DashBoard() {
     <>
       <div className='panel'>
         <div className='panel-heading row'>
-          <h2 className='col-md-3' id='navi'>
-            {practitioner.resourceType}
+        { < img className='col-md-1 logo' src={logoImg} alt=''  />    }
+          <h2 className='col-md-2' id='navi'>
+            XDoctor
+            {/* {practitioner.resourceType} */}
           </h2>
 
           <div className='col-md-8' id='navi'>
             <Nav variant='tabs' defaultActiveKey='/home'>
               <Nav.Item>
-                <Nav.Link onClick={() => handleTabClick('questionnaires')}>Questionnaires</Nav.Link>
+                <Nav.Link onClick={() => handleTabClick('questionnaires')}>Peer Review</Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link onClick={() => handleTabClick('history')}>My History</Nav.Link>

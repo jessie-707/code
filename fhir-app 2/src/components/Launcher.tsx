@@ -1,3 +1,4 @@
+// reference from the SmartJS Client Library
 import React from 'react';
 import { oauth2 as SMART } from 'fhirclient';
 import { LoadingSpinner } from './LoadingSpinner';
@@ -39,3 +40,4 @@ export default class Launcher extends React.Component {
     return <LoadingSpinner loadingText='Launching...' />;
   }
 }
+
